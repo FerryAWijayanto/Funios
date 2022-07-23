@@ -1,7 +1,7 @@
 # Funios Bootcamp iOS Challenge
 ## View Layout Challenge
 
-Create image exactly like the image onboarding.jpg
+Create layout exactly like the image onboarding.jpg
 
 ## Plus point
 
