@@ -20,3 +20,33 @@ let json =
 ]
 """
 
+enum AccountType: String, Codable {
+    case Saving
+    case Investment
+}
+
+struct Account: Codable {
+    let id: String
+    let type: AccountType
+    let name: String
+    let amount: Decimal
+    let createdDateTime: Date
+}
+
+let jsonData = json.data(using: .utf8)!
+
+let decoder = JSONDecoder()
+decoder.keyDecodingStrategy = .convertFromSnakeCase
+decoder.dateDecodingStrategy = .iso8601
+
+let result = try! decoder.decode(Account.self, from: jsonData)
+
+print(result)
+//if let result = try? decoder.decode(Acoount.self, from: jsonData) {
+//    print(result)
+//}
+
+
+
+
+
