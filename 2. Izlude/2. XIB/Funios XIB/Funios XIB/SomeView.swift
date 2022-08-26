@@ -25,7 +25,6 @@ class SomeView: UIView {
         addSubview(view)
     }
     
-    
     private func xibSetupView() -> UIView {
         guard let xibView = Bundle.main.loadNibNamed("SomeView", owner: self, options: nil)?.first as? UIView else { return UIView() }
         return xibView

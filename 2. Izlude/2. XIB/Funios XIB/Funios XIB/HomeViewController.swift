@@ -8,11 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    let viewControllerClassName = "HomeViewController"
+    let array = ["A", "B", "C"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func someButton(_ sender: UIButton) {
